@@ -1,9 +1,5 @@
-// function findMatching(arrayNames, string){
-//     let names = arrayNames.filter(driver => driver.toLowerCase() === string.toLowerCase())
-//     return names
-// }
-const findMatching= (arrayNames, string) => {
-    return arrayNames.filter(driver => driver.toLowerCase() === string.toLowerCase())
+const findMatching = (arrayDrivers, string) => {
+    return arrayDrivers.filter(driver => driver.toLowerCase() === string.toLowerCase())
 }
 
 const fuzzyMatch = (arrayDrivers, string) => {
@@ -11,8 +7,9 @@ const fuzzyMatch = (arrayDrivers, string) => {
     
 }
 
-const matchName = (arrayDrivers, string) => {
-    return arrayDrivers.filter(drivers => drivers.name === string)
+const matchName = (objectDrivers, string) => {
+    console.log(objectDrivers)
+    return objectDrivers.filter(drivers => drivers.name === string)
 }
 
 
@@ -41,15 +38,5 @@ const matchName = (arrayDrivers, string) => {
 
 
 
-
-// function  fuzzyMatch(arrayNames, string){
-//     let names = arrayNames.filter(driver => driver[0] === string[0])
-    
-//     return names
-// }
-
-// function matchName(arrayNames, string){
-//     let names = arrayNames.filter(driver => driver.name === string)
-//     return names  
-// }
+ 
 
